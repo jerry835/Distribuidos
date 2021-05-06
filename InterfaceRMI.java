@@ -3,6 +3,7 @@ import java.rmi.RemoteException;
 
 public interface InterfaceRMI extends Remote
 {
-public float[][] multiplica_matrices(float[][] A,float[][] B, int N) throws RemoteException;
-
+  public String mayusculas(String name) throws RemoteException;
+  public int suma(int a,int b) throws RemoteException;
+  public long checksum(int[][] m) throws RemoteException;
 }
