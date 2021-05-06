@@ -4,10 +4,9 @@ public class ServidorRMI
 {
   public static void main(String[] args) throws Exception
   {
-    String url = "rmi://localhost/prueba";
-    ClaseRMI obj = new ClaseRMI();
+    String url = "rmi://localhost/mmatrices";// url del puerto por defecto
+    ClaseRMI obj = new ClaseRMI();// instancia del objeto remoto
 
-    // registra la instancia en el rmiregistry
-    Naming.rebind(url,obj);
+     Naming.rebind(url,obj);// registra la instancia en el rmiregistry
   }
 }
